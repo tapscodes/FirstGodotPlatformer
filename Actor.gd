@@ -7,4 +7,3 @@ export var gravity: = 3000.0
 func _physics_process(delta: float) -> void:
 	#delta to make it frame-rate independant
 	velocity.y += gravity * delta
-	velocity = move_and_slide(velocity)
