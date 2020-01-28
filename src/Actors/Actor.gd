@@ -1,6 +1,5 @@
 extends KinematicBody2D
 class_name Actor
-#the _ before velocity makes it private
 var _velocity: = Vector2.ZERO
 const FLOOR_NORMAL: = Vector2.UP #Used to help move_and_slide properly do gravity
 export var speed = Vector2(300, 1000)
