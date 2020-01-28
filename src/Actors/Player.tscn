@@ -28,6 +28,7 @@ shape = SubResource( 1 )
 position = Vector2( 0, -96 )
 current = true
 limit_left = 0
+limit_top = 0
 
 [node name="EnemyDetector" type="Area2D" parent="."]
 collision_mask = 2
