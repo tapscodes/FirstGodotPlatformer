@@ -1,6 +1,7 @@
 extends "res://src/Actors/Actor.gd"
 #initial load function
 func _ready():
+	set_physics_process(false) #stops the physics process to start, starts with VisiblityEnabler2D
 	_velocity.x = -speed.x #moves left at the "speed" defined in the inspector
 #physics handling function
 func _physics_process(delta: float) -> void:

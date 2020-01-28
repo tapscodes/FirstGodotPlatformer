@@ -4,3 +4,5 @@ Made using  [this tutorial series](https://www.youtube.com/playlist?list=PLhqJJN
 ### General Notes / Shortcomings
 - Press Alt+Command+F to find and replace on Mac
 - Press Shift+Command+F to find and replace on Mac IN ALL FILES
+- Press Command+Shift+O to quickly open a scene
+- Press Command+R to run preview
