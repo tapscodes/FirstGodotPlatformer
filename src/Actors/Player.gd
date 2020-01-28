@@ -1,5 +1,14 @@
 extends Actor
+export var stomp_impulse: = 1500.0
+#When Enemy Detector enters something else
+func _on_EnemyDetector_area_entered(area):
+	_velocity = calculate_stomp_velocity(_velocity, stomp_impulse) #Makes player stomp
 
+#When Enemy Detector has something enter it
+func _on_EnemyDetector_body_entered(body):
+	queue_free()
+
+#Processes Physics
 func _physics_process(delta: float) -> void:
 	##Detects Input + Sets _velocity
 	var is_jump_interrupted: =  Input.is_action_just_released("jump") and _velocity.y < 0 
@@ -28,4 +37,10 @@ is_jump_interrupted: bool
 		movement_velocity.y = speed.y * get_direction().y
 	if (is_jump_interrupted): #if a jump was stopped
 		movement_velocity.y = 0
+	return movement_velocity
+
+#Calulates stomp velocity
+func calculate_stomp_velocity(linear_velocity: Vector2, impulse: float) -> Vector2:
+	var movement_velocity: = linear_velocity
+	movement_velocity.y = -impulse
 	return movement_velocity
