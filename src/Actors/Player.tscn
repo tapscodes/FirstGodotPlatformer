@@ -7,7 +7,7 @@
 extents = Vector2( 40, 43 )
 
 [node name="Player" type="KinematicBody2D"]
-collision_mask = 8
+collision_mask = 10
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
