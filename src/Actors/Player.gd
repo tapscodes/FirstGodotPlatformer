@@ -26,7 +26,7 @@ func get_direction() -> Vector2:
 #Gets the _velocity using the input and speed
 func calculate_velocity(
 linear_velocity: Vector2, 
-direction: Vector2,
+direction: Vector2, 
 speed: Vector2,
 is_jump_interrupted: bool
 ) -> Vector2:
