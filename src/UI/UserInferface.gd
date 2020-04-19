@@ -19,7 +19,7 @@ func _on_PlayerData_player_died() -> void:
 #Action called when pause is 'pressed'
 func _unhandled_input(event: InputEvent):
 	if (event.is_action_pressed("Pause")):
-		self.paused = not paused
+		self.paused = !self.paused
 		scene_tree.set_input_as_handled()
 
 #Sets state of variables when game is paused
