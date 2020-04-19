@@ -53,6 +53,7 @@ margin_bottom = 205.0
 [node name="ScoreLbl" type="Label" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -121.0
+margin_left = -175.0
+margin_right = -54.0
 margin_bottom = 31.0
 text = "Score: %s"

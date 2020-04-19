@@ -8,4 +8,6 @@ func _get_configuration_warning() -> String:
 
 #When button has been pressed
 func _on_button_up():
+	PlayerData.reset()
+	get_tree().paused = false
 	get_tree().change_scene(next_scene_path)
