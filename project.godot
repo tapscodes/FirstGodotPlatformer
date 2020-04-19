@@ -72,4 +72,8 @@ Pause={
 
 [rendering]
 
+quality/2d/gles2_use_nvidia_rect_flicker_workaround=true
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=0
+quality/subsurface_scattering/quality=2
 environment/default_environment="res://default_env.tres"
