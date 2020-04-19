@@ -1,4 +1,5 @@
 extends Actor
+
 export var stomp_impulse: = 1500.0
 #When Enemy Detector enters something else
 func _on_EnemyDetector_area_entered(area):
@@ -6,7 +7,7 @@ func _on_EnemyDetector_area_entered(area):
 
 #When Enemy Detector has something enter it
 func _on_EnemyDetector_body_entered(body):
-	queue_free()
+	die()
 
 #Processes Physics
 func _physics_process(delta: float) -> void:
@@ -44,3 +45,8 @@ func calculate_stomp_velocity(linear_velocity: Vector2, impulse: float) -> Vecto
 	var movement_velocity: = linear_velocity
 	movement_velocity.y = -impulse
 	return movement_velocity
+
+#Character's death is handled
+func die() -> void:
+	PlayerData.deaths += 1
+	queue_free()

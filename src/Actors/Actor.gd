@@ -1,4 +1,5 @@
 extends KinematicBody2D
+
 class_name Actor
 var _velocity: = Vector2.ZERO
 const FLOOR_NORMAL: = Vector2.UP #Used to help move_and_slide properly do gravity
