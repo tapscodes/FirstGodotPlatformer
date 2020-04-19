@@ -11,7 +11,7 @@ resource_name = "bounce"
 length = 1.4
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("coin.:position")
+tracks/0/path = NodePath("coin:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -66,13 +66,12 @@ tracks/1/keys = {
 }
 
 [node name="Coin" type="Area2D"]
+monitorable = false
 collision_layer = 4
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="coin" type="Sprite" parent="."]
+position = Vector2( 0, -9.99999 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
